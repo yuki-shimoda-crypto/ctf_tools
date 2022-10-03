@@ -5,11 +5,11 @@
 
 int main(int argc, char const *argv[])
 {
-	char	*str;
+	char *str;
 
 	if (argc == 1)
 		return (0);
-	str = (char *)malloc(strlen(argv[1]) + 1);
+	str = (char *)malloc(strlen(argv[1]) + 1ul);
 	if (!str)
 		return (0);
 	strcpy(str, argv[1]);
